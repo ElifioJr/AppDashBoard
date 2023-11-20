@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DashBoardApp.TelaUsuario.MVVM.View.CadastroPage"
-             Title="CadastroPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:viewmodel="clr-namspace:DashBoardApp.TelaUsuario.MVVM.ViewModel"
+             Title="Pagina De Cadastro">
+
+    <StackLayout>
+        <Entry Placeholder="Nome" Text="{Binding UsuarioNome}"/>
+        <Entry Placeholder="Senha" Text="{Binding UsuarioSenha}"/>
+        <Entry Placeholder="Email" Text="{Binding UsuarioEmail}"/>
+        <Button Text="Cadastrar" Command="{Binding AddUsuarioCommand}"/>
+    </StackLayout>
 </ContentPage>

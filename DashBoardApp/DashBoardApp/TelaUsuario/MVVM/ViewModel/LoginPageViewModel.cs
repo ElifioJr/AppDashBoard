@@ -8,5 +8,6 @@ namespace DashBoardApp.TelaUsuario.MVVM.ViewModel
     {
     public partial class LoginPageViewModel
         {
+            
         }
     }

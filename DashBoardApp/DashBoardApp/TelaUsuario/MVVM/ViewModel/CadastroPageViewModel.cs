@@ -27,7 +27,9 @@ public partial class CadastroPageViewModel : ObservableObject
         {
         try
             {
-            if (!string.IsNullOrEmpty(UsuarioNome))
+            if (!string.IsNullOrEmpty(UsuarioNome) &&
+                !string.IsNullOrEmpty(UsuarioEmail) &&
+                !string.IsNullOrEmpty(UsuarioSenha))
                 {
                 Usuario usuario = new()
                     {
@@ -42,7 +44,7 @@ public partial class CadastroPageViewModel : ObservableObject
 
             else
                 {
-                await Shell.Current.DisplayAlert("Error", "Usuario sem Nome", "OK");
+                await Shell.Current.DisplayAlert("Error", "Preencha todos os campos !", "OK");
                 }
             }
         catch(Exception ex) 

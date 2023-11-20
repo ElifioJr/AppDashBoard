@@ -14,6 +14,7 @@ public class UsuarioService : IUsuarioService
 
     private SQLiteAsyncConnection _dbConnection;
 
+
     public async Task<int> AtualizaUsuarioAsync(Usuario usuario)
         {
             return await _dbConnection.UpdateAsync(usuario);
@@ -24,27 +25,15 @@ public class UsuarioService : IUsuarioService
             return await _dbConnection.InsertAsync(usuario);
         }
 
-    public async Task<int> DeletaUsuarioAsync(Usuario usuario)
+    public async Task<int> DeletaUsuarioAsync(Usuario Id)
         {
-            return await _dbConnection.DeleteAsync(usuario);
+            return await _dbConnection.DeleteAsync(Id);
         }
 
-    public async Task<IEnumerable<Usuario>> GetUsuarioAsync()
-        {
-         var usuarios = await _dbConnection.Table<Usuario>().ToListAsync();
-         return usuarios;
-        }
-
-    public async Task<IEnumerable<Usuario>> GetNomeUsuarioAsync(string nome)
-        {
-            var usuarios = await _dbConnection.Table<Usuario>().Where(x => x.Nome.Contains(nome)).ToListAsync();
-            return usuarios;
-        }
-
-   
 
 
 
+// Conexao Com o banco de dados
     public async Task InitializeAsync()
         {
         await SetUpDb();

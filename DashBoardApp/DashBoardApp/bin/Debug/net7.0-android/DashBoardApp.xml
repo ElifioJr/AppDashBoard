@@ -4,6 +4,25 @@
         <name>DashBoardApp</name>
     </assembly>
     <members>
+        <member name="T:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.UsuarioNome">
+            <inheritdoc cref="F:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel._usuarioNome"/>
+        </member>
+        <member name="P:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.UsuarioEmail">
+            <inheritdoc cref="F:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel._usuarioEmail"/>
+        </member>
+        <member name="P:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.UsuarioSenha">
+            <inheritdoc cref="F:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel._usuarioSenha"/>
+        </member>
+        <member name="F:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.addUsuarioCommand">
+            <summary>The backing field for <see cref="P:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.AddUsuarioCommand"/>.</summary>
+        </member>
+        <member name="P:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.AddUsuarioCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:DashBoardApp.TelaUsuario.MVVM.ViewModel.CadastroPageViewModel.AddUsuario"/>.</summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -102,6 +121,36 @@
             <param name = "length">The duration, in milliseconds, of the animation</param>
             <param name = "easing">The easing function to be used in the animation</param>
             <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UsuarioNome">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UsuarioNome" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UsuarioEmail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UsuarioEmail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UsuarioSenha">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UsuarioSenha" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UsuarioNome">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UsuarioNome" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UsuarioEmail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UsuarioEmail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UsuarioSenha">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UsuarioSenha" generated properties.</summary>
         </member>
     </members>
 </doc>
